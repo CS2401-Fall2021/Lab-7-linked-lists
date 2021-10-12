@@ -7,7 +7,7 @@ public class Test {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
     String line = scanner.nextLine();
-    String[] inputs = line.split("-");
+    String[] inputs = line.split("_");
     int[] array = new int[]{};
     if (inputs.length > 1) {
       array = Arrays.stream(inputs[1].split(","))
