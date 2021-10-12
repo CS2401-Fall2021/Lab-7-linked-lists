@@ -25,5 +25,6 @@ Q4.3: What do you return if you have negative steps?
 
 Q4.4: What do you return if you have zero steps?
 
+Q4.5: What is the big-O runtime for this method in terms of n steps and m houses?
 
 REMINDER: add your 6 tests to Main.java!
