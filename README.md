@@ -47,3 +47,8 @@ Write 2 tests for each of your methods
 * getCandy(House h, int n)
 * getMaxCandyOnStreet(House h, int n)
 Include input,output and what you're testing
+
+## Take it further
+How would you implement a solution to part 4 that had O(n) runtime?
+How would you solve this problem if you could skip houses, and needed to select n houses?
+How would you solve this problem if you had negative candy?
