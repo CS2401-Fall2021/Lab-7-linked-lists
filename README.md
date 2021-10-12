@@ -5,6 +5,7 @@ You are trick-or-treating along a long street. Each house is giving out candy, b
 1) You cannot return to a house once you've passed it.
 2) It's a one way street, and you can only go in one direction
 3) You cannot visit more than n houses
+4) You cannot skip houses
 
 Since this lab is about linked lists, we can think about modeling this as a linked list with the Nodes representing our houses.
 
