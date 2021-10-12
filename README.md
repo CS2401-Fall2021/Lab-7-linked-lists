@@ -20,7 +20,7 @@ Each house has the following
 
 ## Part 1: Implement the House object (10 pts)
 House should take in how much candy it gives out, and have another variable named nextHouse to track what house comes after it. 
-NextHouse should be public so we can set its value later (i.e. not in the constructor)
+NextHouse should be public so we can set its value later (i.e. not in the constructor). The fields must be named nextHouse and candy or you will fail the autograder.
 
 ## Part 2: Create the street from an array (20 pts: 10 code, 10 reflections)
 Implement modelStreet(int[] model) in Main.java Given an array of integers that represent the amount of candy given out at each house, transform this array into a Linked List of houses giving out candy.
