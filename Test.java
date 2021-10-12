@@ -33,11 +33,14 @@ public class Test {
     if(inputs[0].equals("max")){
       House h = Main.modelStreet(array);
       int steps =Integer.parseInt(inputs[2]);
-      System.out.println("max:"+Main.getMaxCandyOnStreet(h,steps));
+      House max = Main.getMaxCandyOnStreet(h,steps)
+      if(h==null){
+         System.out.println("max:null");
+      }
+      else {
+      System.out.println("max:"+max.candy);
+           }
     }
-
-
   }
-
 
 }
