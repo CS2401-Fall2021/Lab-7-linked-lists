@@ -18,23 +18,32 @@ Each house has the following
 
 ## Parts of the lab
 
-## Part 1: Implement the House object
-House should take in how much candy it gives out, and have another variable named nextHouse to track what house comes after it.
+## Part 1: Implement the House object (10 pts)
+House should take in how much candy it gives out, and have another variable named nextHouse to track what house comes after it. 
+NextHouse should be public so we can set its value later (i.e. not in the constructor)
 
-## Part 2: Create the street from an array
-Implement modelStreet(int[]) in Main.java Given an array of integers that represent the amount of candy given out at each house, transform this array into a Linked List of houses giving out candy.
-Return the first house in the street. 
+## Part 2: Create the street from an array (20 pts: 10 code, 10 reflections)
+Implement modelStreet(int[] model) in Main.java Given an array of integers that represent the amount of candy given out at each house, transform this array into a Linked List of houses giving out candy.
+Return the first house in the street. If the array is empty, return null.  We can assume there is no one who will steal candy, so 
+If you have negative values, set them to be 0.  
 
 For each integer value in the input array
 1) Create a house object currentHouse with the amount of candy equivalent to the integer value
 2) If there is a previous house, set that previous house's nextHouse to be currentHouse
 3) Now, previous house is the currentHouse.
 
-## Part 3: Given a starting House h, determine how much candy you can get in n houses
+## Part 3: Given a starting House h, determine how much candy you can get in n houses (30 pts: 10 code, 20 reflection)
 Implement the method int getCandy(House h, int n) in Main.java which returns the total amount of candy that can be gotten in n houses starting at House h. 
-Hint: You can do this iteratively or recursively.
+Hint: You can do this iteratively or recursively. If h is null of steps is negative return 0.
 
-## Part 4: Given a street that starts at House h, determine which house you should start at to maximize your candy
-Implement getMaxCandyOnStreet(House h, int n) in Main.java. This is a little different than the question above. You essentially need to try starting at each house on the street and figure out what
+## Part 4: Given a street that starts at House h, determine which house you should start at to maximize your candy (20 pts: 10 code, 10 reflection)
+Implement House getMaxCandyOnStreet(House h, int n) in Main.java. This is a little different than the question above. 
+You essentially need to try starting at each house on the street and return the house you want to start at to maximize your candy.
+If h is null, or there are negative steps return null.
 
-## Part 5: Tests
+## Part 5: Tests (30 pts)
+Write 2 tests for each of your methods
+* modelStreet(int[] model)
+* getCandy(House h, int n)
+* getMaxCandyOnStreet(House h, int n)
+Include input,output and what you're testing

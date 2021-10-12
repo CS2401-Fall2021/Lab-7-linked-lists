@@ -1,0 +1,29 @@
+Part 2
+
+Q2.1: If the array is empty, what should be returned?
+
+Q2.2: What should happen if there is a negative value in the array?
+
+Q2.3: Which House do you return?
+
+
+Part 3:
+Q3.1: What does the return value represent?
+
+Q3.2: What do you return if you have no houses?
+
+Q3.3: What do you return if you have negative steps?
+
+Q3.4: What do you return if you have zero steps?
+
+Part 4:
+Q4.1: What does the return value represent?
+
+Q4.2: What do you return if you have no houses?
+
+Q4.3: What do you return if you have negative steps?
+
+Q4.4: What do you return if you have zero steps?
+
+
+REMINDER: add your 6 tests to Main.java!
