@@ -20,7 +20,7 @@ public class Test {
       if (h == null) {
         System.out.println("model:null");
       } else {
-        for (int i = 0; i < array.length - 2; i++) {
+       while(h.nextHouse!=null) {
           h = h.nextHouse;
         }
         System.out.println("model:" + h.candy);
@@ -28,12 +28,12 @@ public class Test {
     }
     if (inputs[0].equals("step")) {
       House h = Main.modelStreet(array);
-      int steps = h==null?Integer.parseInt(inputs[1]):Integer.parseInt(inputs[2]);
+      int steps = h==null?3:Integer.parseInt(inputs[2]);
       System.out.println("step:" + Main.getCandy(h, steps));
     }
     if (inputs[0].equals("max")) {
       House h = Main.modelStreet(array);
-      int steps = h==null?Integer.parseInt(inputs[1]):Integer.parseInt(inputs[2]);
+      int steps = h==null?3:Integer.parseInt(inputs[2]);
       House max = Main.getMaxCandyOnStreet(h, steps);
       if (h == null) {
         System.out.println("max:null");
