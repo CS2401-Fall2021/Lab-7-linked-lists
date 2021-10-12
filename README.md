@@ -33,8 +33,7 @@ For each integer value in the input array
 3) Now, previous house is the currentHouse.
 
 ## Part 3: Given a starting House h, determine how much candy you can get in n houses (30 pts: 10 code, 20 reflection)
-Implement the method int getCandy(House h, int n) in Main.java which returns the total amount of candy that can be gotten in n houses starting at House h. 
-Hint: You can do this iteratively or recursively. If h is null of steps is negative return 0.
+Implement the *RECURSIVE* method int getCandy(House h, int n) in Main.java which returns the total amount of candy that can be gotten in n houses starting at House h. While you could do this iteratively, you must do it recursively to recieve full credit. If h is null of steps is negative return 0.
 
 ## Part 4: Given a street that starts at House h, determine which house you should start at to maximize your candy (20 pts: 10 code, 10 reflection)
 Implement House getMaxCandyOnStreet(House h, int n) in Main.java. This is a little different than the question above. 
